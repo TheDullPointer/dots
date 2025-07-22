@@ -1,0 +1,21 @@
+return {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    keys = {
+        { "<leader>t", name = "" },
+        { "<leader>tf", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
+        { "<leader>tg", "<cmd>Telescope live_grep<cr>", desc = "Find Live Grep" },
+        { "<leader>tb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
+        { "<leader>th", "<cmd>Telescope help_tags<cr>", desc = "Find Help Tags" },
+        { "<leader>to", "<cmd>Telescope oldfiles<cr>", desc = "Find Recent Files" },
+        { "<leader>tw", "<cmd>Telescope grep_string<cr>", desc = "Find Grep Word Under Cursor" },
+        { "<leader>td", "<cmd>Telescope diagnostics<cr>", desc = "Find Diagnostics" },
+        { "<leader>tr", "<cmd>Telescope resume<cr>", desc = "Find Resume Last Search" },
+        { "<leader>tm", "<cmd>Telescope marks<cr>", desc = "Find Marks" },
+        { "<leader>tc", "<cmd>Telescope commands<cr>", desc = "Find Commands" },
+        { "<leader>tk", "<cmd>Telescope keymaps<cr>", desc = "Find Keymaps" },
+        { "<leader>ts", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Find Document Symbols" },
+        { "<leader>tS", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "Find Workspace Symbols" },
+    },
+}
